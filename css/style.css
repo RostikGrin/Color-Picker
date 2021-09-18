@@ -1,0 +1,40 @@
+body {
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	background: #000;
+	transition: 1s;
+}
+
+button {
+	border: none;
+	outline: none;
+}
+
+.header__button {
+	text-transform: uppercase;
+	cursor: pointer;
+	color: #cf4c4c;
+	font-size: 67px;
+	font-family: "Roboto", sans-serif;
+	background: #fff;
+	border-radius: 30px;
+	padding: 50px;
+	text-shadow: 3px 3px 5px #000;
+}
+
+.header.active {
+	background: rgb(110, 173, 37);
+}
+
+.header__button.active {
+	transform: scale(0.8);
+}
