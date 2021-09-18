@@ -21,6 +21,7 @@ button {
 
 .header__button {
 	text-transform: uppercase;
+	box-shadow: 0 0 7px rgb(59, 59, 59);
 	cursor: pointer;
 	color: #cf4c4c;
 	font-size: 67px;
@@ -28,7 +29,7 @@ button {
 	background: #fff;
 	border-radius: 30px;
 	padding: 50px;
-	text-shadow: 3px 3px 5px #000;
+	text-shadow: 1px 1px 4px #000;
 }
 
 .header.active {
@@ -37,4 +38,11 @@ button {
 
 .header__button.active {
 	transform: scale(0.8);
+}
+
+@media (max-width: 650px) {
+	.header__button {
+		font-size: 32px;
+		padding: 30px;
+	}
 }
